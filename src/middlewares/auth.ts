@@ -7,7 +7,7 @@ interface newRequest extends Request{
     userID: number
 }
 
-export default (request:newRequest, response:Response, next:NextFunction) => {
+export default (request:any, response:Response, next:NextFunction) => {
     const authHeader = request.headers.authorization
 
     if(!authHeader)
