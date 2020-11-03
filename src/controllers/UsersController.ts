@@ -97,7 +97,7 @@ export default {
         .then(()=> console.log('email sent'))
         .catch(err => console.log(err))
 
-        return response.json({newUser})
+        return response.json({message: "Email enviado!"})
         
 
     },

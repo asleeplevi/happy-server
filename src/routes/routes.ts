@@ -13,7 +13,7 @@ routes.get('/orphanages',  OrphanagesController.index)
 routes.get('/orphanages/:id',  OrphanagesController.show)
 routes.post('/orphanages',  upload.array('images'),OrphanagesController.create)
 
-routes.post('/user', UsersController.create)
+routes.post('/user/create', UsersController.create)
 routes.post('/user/authenticate', UsersController.authenticate)
 routes.post('/user/forgot_password', UsersController.forgotPassword)
 routes.post('/user/reset_password', UsersController.resetPassword)
